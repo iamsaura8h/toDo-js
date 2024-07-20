@@ -1,0 +1,99 @@
+*{
+    font-family:sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#81B29A,#3D405B);
+    padding: 10px;
+    
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: azure; 
+    margin: 100px auto 30px;
+    padding: 40px 30px 70px;
+    border-radius: 7px;
+}
+
+.todo-app h2{
+    display: flex;
+    align-items: centre;
+    color: rgb(23, 22, 22);
+    margin-bottom: 20px;
+    
+}
+
+.todo-app h2 img{
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom: 20px ;
+}
+
+input{
+    flex: 1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border:none;
+    outline: none;
+    padding: 16px 50px;
+    background:#ff5954;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    background-color: aqua;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content:'';
+    position:absolute ;
+    height: 28px;
+    width: 28px;
+    background-image: url(images/8293277.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 12px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url(images/product7.jpg);
+}
+

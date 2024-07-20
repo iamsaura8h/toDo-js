@@ -10,7 +10,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#81B29A,#3D405B);
+    background:repeating-linear-gradient(124deg,#54c9ff,#edeef0);
     padding: 10px;
     
 }
@@ -34,6 +34,9 @@
 
 .todo-app h2 img{
     margin-left: 10px;
+    height: 30px;
+    width: auto;
+    margin-top: 5px;
 }
 
 .row{
@@ -58,7 +61,7 @@ button{
     border:none;
     outline: none;
     padding: 16px 50px;
-    background:#ff5954;
+    background:#54c9ff;
     color:#fff;
     font-size: 16px;
     border-radius: 25px;
@@ -78,9 +81,9 @@ ul li {
 ul li::before{
     content:'';
     position:absolute ;
-    height: 28px;
-    width: 28px;
-    background-image: url(images/product10.jpg);
+    height: 25px;
+    width: 25px;
+    background-image: url(images/uncheked.png);
     background-size: cover;
     background-position: center;
     top:12px;
@@ -94,7 +97,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image: url(images/product7.jpg);
+    background-image: url(images/checked.png);
 }
 
 ul li span{
